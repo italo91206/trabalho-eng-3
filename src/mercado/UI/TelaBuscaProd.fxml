@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mercado.UI.TelaBuscaProdController">
+   <children>
+      <JFXTextField fx:id="txtBusca" labelFloat="true" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="183.0" promptText="Digite a descricao do produto" />
+      <JFXButton fx:id="btnBuscat" layoutX="205.0" layoutY="14.0" onAction="#clkBuscar" prefHeight="25.0" prefWidth="83.0" text="Buscar" />
+      <TableView fx:id="tabela" layoutX="14.0" layoutY="78.0" onKeyPressed="#clkEnvia" prefHeight="200.0" prefWidth="270.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="ColDesc" prefWidth="120.0" text="Descricao" />
+            <TableColumn fx:id="ColPreco" prefWidth="74.0" text="Preco" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

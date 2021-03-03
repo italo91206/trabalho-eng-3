@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Mercado.jnlp">
+  <information>
+    <title>Mercado</title>
+    <vendor>Leonardo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Mercado.jar" size="65817" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\postgresql-42.2.18.jar" size="1004719" download="eager" />
+    <jar href="lib\postgresql-42.2.18.jre6.jar" size="847480" download="eager" />
+    <jar href="lib\postgresql-42.2.18.jre7.jar" size="981724" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Mercado" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mercado.Mercado"  name="Mercado" />
+  <update check="always"/>
+</jnlp>
