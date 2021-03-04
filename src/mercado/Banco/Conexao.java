@@ -10,20 +10,20 @@ public class Conexao
 {
     private Connection connect;
     private String erro;
+    
     public Conexao()
     {   erro="";
         connect=null;
     }
-    public boolean conectar(String local,String banco,String usuario,String senha)
+    public boolean conectar(String url, String username, String password)
     {   boolean conectado=false;
         try {
-            //Class.forName(driver); "org.postgresql.Driver");
-            String url = local+banco; //"jdbc:postgresql://localhost/"+banco;
-            connect = DriverManager.getConnection( url, usuario,senha);
+            Class.forName("org.postgresql.Driver");
+            connect = DriverManager.getConnection( url, username, password);
             conectado=true;
         }
         catch ( SQLException sqlex )
-        { erro="Impossivel conectar com a base de dados: " + sqlex.toString(); }
+            { erro="Impossivel conectar com a base de dados: " + sqlex.toString(); }
         catch ( Exception ex )
         { erro="Outro erro: " + ex.toString(); }
         return conectado;

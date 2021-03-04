@@ -8,8 +8,9 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Mercado.jar" size="65817" download="eager" />
+    <jar href="Mercado.jar" size="66002" download="eager" />
     <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
     <jar href="lib\postgresql-42.2.18.jar" size="1004719" download="eager" />
     <jar href="lib\postgresql-42.2.18.jre6.jar" size="847480" download="eager" />
     <jar href="lib\postgresql-42.2.18.jre7.jar" size="981724" download="eager" />
